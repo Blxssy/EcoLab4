@@ -1,0 +1,65 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../DesignFiles"
+		},
+		{
+			"path": "../../../HeaderFiles"
+		},
+		{
+			"path": "../../../SharedFiles"
+		},
+		{
+			"path": "../../../SourceFiles"
+		}
+	],
+	"settings": {
+		"C_Cpp.default.browse.path": [],
+		"C_Cpp.default.includePath": [
+			"${workspaceFolder}/**",
+			"**/../../HeaderFiles",
+			"**/../../SharedFiles",
+			"${ECO_FRAMEWORK}/Eco.Core1/SharedFiles",
+			"${ECO_FRAMEWORK}/Eco.InterfaceBus1/SharedFiles",
+			"${ECO_FRAMEWORK}/Eco.MemoryManager1/SharedFiles",
+			"${ECO_FRAMEWORK}/Eco.FileSystemManagement1/SharedFiles" 
+
+		],
+		"C_Cpp.default.cStandard": "c89",
+		"C_Cpp.default.defines": [
+			"ECO_OS",
+			"ECO_LIB",
+			"ECO_BCM283X",
+			"ECO_MEM_EXT",
+			"ECO_AARCH64"
+		],
+		"files.associations": {
+			"IEcoBase1.h": "c"
+		},
+		"makefile.configurations": [
+			{
+				"name": "StaticDebug",
+				"makeArgs": ["TARGET=1", "DEBUG=1"],
+				"makefilePath": "Makefile"
+			},
+			{
+				"name": "StaticRelease",
+				"makeArgs": ["TARGET=1", "DEBUG=0"],
+				"makefilePath": "Makefile"
+			},
+			{
+				"name": "DynamicDebug",
+				"makeArgs": ["TARGET=0", "DEBUG=1"],
+				"makefilePath": "Makefile"
+			},
+			{
+				"name": "DynamicRelease",
+				"makeArgs": ["TARGET=0", "DEBUG=0"],
+				"makefilePath": "Makefile"
+			}
+		]
+	}
+}
